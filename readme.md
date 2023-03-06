@@ -1,4 +1,4 @@
-![](github.com/msashofwan123/mysql-repair-xampp/assets/mysql-banner/jpg)
+![](https://raw.githubusercontent.com/msashofwan123/mysql-repair-tools/master/assets/mysql-banner.jpg)
 
 <p align="center">
     <a href="https://github.com/msashofwan123/mysql-repair-tools/releases">
