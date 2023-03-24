@@ -20,7 +20,6 @@ echo Name           = Mysql Repair Tools For XAMPP (Windows)
 echo Version        = 1.1.0
 echo Release date   = 06/03/2023
 echo Developer      = MHD Project
-echo contact        = msashofwan123@gmail.com
 echo github         = github.com/msashofwan123
 echo.
 echo Starting App...

@@ -24,17 +24,17 @@ if /i "%userinput%"=="N" (
 REM Duplicate "data" folder to "tmp-data"
 xcopy "%source%\data" "%source%\tmp-data" /e /i /h /k
 
-timeout /t 2
+timeout /t 1
 
 call script\date.bat "%source%"
 
 @REM echo %source%
 echo Data has been updated with the date
 
-timeout /t 2
+timeout /t 1
 
 REM Duplicate "backup" folder and rename it to "data" folder
-xcopy "%source%\backup" "%source%\data" /e /i /h /k.
+xcopy "%source%\backup" "%source%\data" /e /i /h /k
 
         REM Copying all folders from "tmp-data" MySQL except for 4 core folders.
         for /d %%f in ("%source%\tmp-data\*") do (
@@ -53,7 +53,7 @@ REM Copy "ibdata1" database file
 copy "%source%\tmp-data\ibdata1" "%source%\data" /Y
 echo.
 echo Deleting tmp-data
-timeout /t 3
+timeout /t 1
 
 REM Deleting "tmp-data" directory
 rmdir /s /q "%source%\tmp-data"
@@ -70,4 +70,4 @@ echo Program Version 1.1.0
 echo .
 echo Developed By [MHD Project]
 
-timeout /t 5
+timeout /t 2
