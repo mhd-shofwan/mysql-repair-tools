@@ -17,7 +17,7 @@ echo.
 echo ============= MYSQL REPAIR TOOLS FOR XAMPP ==================================
 echo.
 echo Name           = Mysql Repair Tools For XAMPP (Windows)
-echo Version        = 1.1.0
+echo Version        = 1.2.0
 echo Release date   = 06/03/2023
 echo Developer      = MHD Project
 echo github         = github.com/msashofwan123
