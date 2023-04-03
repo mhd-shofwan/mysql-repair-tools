@@ -1,2 +1,3 @@
 assets/ export-ignore
-readme.md
+readme.md export-ignore
+.gitattributes export-ignore

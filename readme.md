@@ -10,6 +10,9 @@
     <a href="https://github.com/msashofwan123/mysql-repair-tools/commit/ac5ab7d8ea9d96bffb8686b403294e169430f9b5">
         <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/msashofwan123/mysql-repair-tools?color=orange&label=Last%20Commit">
     </a>
+    <a href="https://github.com/msashofwan123/mysql-repair-tools">
+        <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/msashofwan123/mysql-repair-tools?label=file%20size">
+    </a>
 </p>
 
 MYSQL REPAIR TOOLS FOR XAMPP
@@ -36,3 +39,7 @@ The tool is open source, so anyone can develop it without any difficulties. I am
 ## Notes for this script.
 
 This writing aims to convey that this simple script is not a solution to all problems related to MySQL that refuses to activate on XAMPP application. However, this script can help solve many issues related to MySQL. Before using this script, make sure to back up all data as a precaution against any possible scenarios that may occur.
+
+## License
+
+This application is an open-source project licensed under the [MIT License](https://opensource.org/licenses/MIT)

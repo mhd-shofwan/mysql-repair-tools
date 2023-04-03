@@ -22,3 +22,7 @@ The tool is open source, so anyone can develop it without any difficulties. I am
 >> Notes for this script.
 
 This writing aims to convey that this simple script is not a solution to all problems related to MySQL that refuses to activate on XAMPP application. However, this script can help solve many issues related to MySQL. Before using this script, make sure to back up all data as a precaution against any possible scenarios that may occur.
+
+>> License
+
+This application is an open-source project licensed under the MIT License
