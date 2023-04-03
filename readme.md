@@ -20,9 +20,10 @@ The tool is open source, so anyone can develop it without any difficulties. I am
 4. Select the directory of your MySQL file (Default C:\xampp\mysql)
 5. Press Y to confirm that the directory is correct
 6. Wait for the repair process to finish
-7. The Command Prompt window will close automatically, and there will be a "data - dd/mm/yyyy" folder as a backup in the mysql directory
-8. Test and turn on MySQL in your XAMPP
-9. Good luck trying it out.
+7. There will be a repair phase 2 option, to configure the my.ini file. We suggest to do it as well.
+8. The Command Prompt window will close automatically, and there will be a "data - dd-mm-yyyy" folder as a backup in the mysql directory
+9. Test and turn on MySQL in your XAMPP
+10. Good luck trying it out.
 
 <b> This script runs on Windows 10 and 11. </b>
 

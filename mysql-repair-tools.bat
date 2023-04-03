@@ -1,12 +1,13 @@
 @echo off
 
-call script\app.bat
+call data\app.bat
+set vdata=%data%
 
 :selectdir
-echo Please select the "mysql" directory on your PC. "(Default = c:\xampp\mysql)"
+echo Please select the "mysql" directory on your PC. "(Default = C:\xampp\mysql)"
 
 REM Displaying a pop-up dialog to select a directory using a .vbs file.
-for /f "delims=" %%d in ('cscript //nologo script\selectdir.vbs') do set "source=%%d"
+for /f "delims=" %%d in ('cscript //nologo data\script\PathFinder.vbs') do set "source=%%d"
 
 REM Display a message with the selected directory
 echo .
@@ -26,8 +27,13 @@ xcopy "%source%\data" "%source%\tmp-data" /e /i /h /k
 
 timeout /t 1
 
-call script\date.bat "%source%"
+REM Set the date
+for /f "tokens=2,3,4 delims=/ " %%d in ('echo %date%') do set "today=%%d-%%e-%%f"
 
+REM Rename the "data" folder to "data - dd-mm-yyyy"
+ren "%source%\data" "data - %today%"
+
+echo current date: %today%
 @REM echo %source%
 echo Data has been updated with the date
 
@@ -60,14 +66,11 @@ rmdir /s /q "%source%\tmp-data"
 echo.
 echo. tmp-data has been deleted.
 
-REM End of script
-echo.
-echo ============= MYSQL REPAIR TOOLS FOR XAMPP ==================================
-echo.
-echo The process has ended. Thank you for trusting our program, MYSQL REPAIR TOOLS.
-echo .
-echo Program Version 1.1.0
-echo .
-echo Developed By [MHD Project]
+@REM Provide an option whether to perform Stage 2 Repair
+cscript data\script\GrantDeny.vbs %source%
 
-timeout /t 2
+REM End of script
+set MESSAGE_BOX_TITLE=Mysql Repair Tools v%vdata%
+set MESSAGE_BOX_MESSAGE=Repair process has ended. Thank you for using our application
+
+mshta vbscript:msgbox("%MESSAGE_BOX_MESSAGE%",vbOKOnly,"%MESSAGE_BOX_TITLE%")(window.close)
