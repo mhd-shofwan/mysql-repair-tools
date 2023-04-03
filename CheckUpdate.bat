@@ -10,7 +10,7 @@ set conn=
 
 :: Retrieve the latest version from the conf.ini file.
 for /f "tokens=2 delims==" %%v in ('type "%config%" ^| findstr /i "%version%"') do (
-    set "vdata=v%%v"
+    set "vdata="v%%v""
 )
 
 :: Run VBS script to check internet connection and capture its value
@@ -21,7 +21,6 @@ for /f "tokens=*" %%i in ('curl -s https://api.github.com/repos/%repo_username%/
 
 rem Get only the version from the last release data
 for /f "tokens=2 delims=:, " %%i in ("%release%") do set vgithub=%%i
-
 
 @REM Check if there is a my.ini file
 if exist "%config%" (
@@ -35,7 +34,7 @@ if exist "%config%" (
         echo .
 
         @REM Update Confirmation Alert
-        if "%vdata%"=="%vgithub%" (
+        if "%vdata%" == "%vgithub%" (
             echo Application is already up to date
         ) else (
             echo New Application Version Available
