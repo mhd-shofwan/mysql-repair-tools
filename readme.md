@@ -2,7 +2,13 @@
 
 <p align="center">
     <a href="https://github.com/msashofwan123/mysql-repair-tools/releases">
-        <img alt="GitHub release (release name instead of tag name)" src="https://img.shields.io/github/v/release/msashofwan123/mysql-repair-tools">
+        <img alt="GitHub Release" src="https://img.shields.io/github/v/release/msashofwan123/mysql-repair-tools">
+    </a>
+    <a href="https://github.com/msashofwan123/mysql-repair-tools/blob/master/LICENSE">
+        <img alt="GitHub License" src="https://img.shields.io/github/license/msashofwan123/mysql-repair-tools">
+    </a>
+    <a href="https://github.com/msashofwan123/mysql-repair-tools/commit/ac5ab7d8ea9d96bffb8686b403294e169430f9b5">
+        <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/msashofwan123/mysql-repair-tools?color=orange&label=Last%20Commit">
     </a>
 </p>
 
