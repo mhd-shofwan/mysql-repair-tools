@@ -33,12 +33,17 @@ if exist "%config%" (
         echo Current Version : %vdata%
         echo .
 
-        @REM Update Confirmation Alert
-        if "%vdata%" == "%vgithub%" (
-            echo Application is already up to date
+        if "%conn%" == "offline" (
+            echo No Internet Connection
         ) else (
-            echo New Application Version Available
-            cscript data\script\alert.vbs "Update Available" "New Application Version is available. Do you want to download it?" "  Download Cancelled" "data\Downloader.bat"
+
+            @REM Update Confirmation Alert
+            if "%vdata%" == "%vgithub%" (
+                echo Application is already up to date
+            ) else (
+                echo New Application Version Available
+                cscript data\script\alert.vbs "Update Available" "New Application Version is available. Do you want to download it?" "  Download Cancelled" "data\Downloader.bat"
+            )
         )
 
     ) else (
