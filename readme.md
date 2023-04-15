@@ -21,6 +21,10 @@ This is a simple application based on .bat files that is designed to fix the com
 
 The tool is open source, so anyone can develop it without any difficulties. I am aware that there may still be unresolved bugs, so I hope that this application can be further improved and optimized in the future.
 
+## Why Use .bat Format instead of .exe
+
+The MySQL Repair Tools uses Batch format because it is more efficient and easy for anyone who wants to revise it. Moreover, to release an application in .exe format, many requirements and attributes are needed, such as digital certificates, compatibility, libraries, and so on. Therefore, we decided to use batch as a simpler alternative that can be run on various Windows OS.
+
 ## How to Use:
 
 1. Download the MYSQL REPAIR TOOLS File for Windows
