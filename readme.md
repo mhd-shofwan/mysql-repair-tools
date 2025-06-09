@@ -28,15 +28,16 @@ The MySQL Repair Tools uses Batch format because it is more efficient and easy f
 ## How to Use:
 
 1. Download the MYSQL REPAIR TOOLS File for Windows
-2. Open the mysql-repair-tools.bat file
-3. Press any key, so a pop-up window will appear
-4. Select the directory of your MySQL file (Default C:\xampp\mysql)
-5. Press Y to confirm that the directory is correct
-6. Wait for the repair process to finish
-7. There will be a repair phase 2 option, to configure the my.ini file. We suggest to do it as well.
-8. The Command Prompt window will close automatically, and there will be a "data - dd-mm-yyyy" folder as a backup in the mysql directory
-9. Test and turn on MySQL in your XAMPP
-10. Good luck trying it out.
+2. Extract the file
+3. Open the mysql-repair-tools.bat file
+4. Press any key, so a pop-up window will appear
+5. Select the directory of your MySQL file (Default C:\xampp\mysql)
+6. Press Y to confirm that the directory is correct
+7. Wait for the repair process to finish
+8. There will be a repair phase 2 option, to configure the my.ini file. We suggest to do it as well.
+9. The Command Prompt window will close automatically, and there will be a "data - dd-mm-yyyy" folder as a backup in the mysql directory
+10. Test and turn on MySQL in your XAMPP
+11. Good luck trying it out.
 
 <b> This script runs on Windows 10 and 11. </b>
 
